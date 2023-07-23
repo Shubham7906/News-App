@@ -7,16 +7,11 @@ const time = "2023-07-21"
 window.addEventListener("load", () => fetchNews("India"));
 
 async function fetchNews(query){
-    try{
     const res = await fetch(`${url}${query}&from=${time}&apiKey=${apiKey}`);
     const data = await res.json();
     const articles = data.articles;
     console.log(articles);
     bindData(articles);
-    }
-    catch (error){
-        console.error('Error fetching data:', error);
-    }
 }
 
 
