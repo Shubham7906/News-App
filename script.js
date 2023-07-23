@@ -9,7 +9,8 @@ window.addEventListener("load", () => fetchNews("India"));
 async function fetchNews(query){
     const res = await fetch(`${url}${query}&from=${time}&apiKey=${apiKey}`);
     const data = await res.json();
-    bindData(data.articles);
+    const articles = data.articles;
+    bindData(articles);
 }
 
 function bindData(articles) {
