@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="#">
+            <img src="/Assets/LOGO-01.png" onclick="onNavItemClick('trending')" alt="">
+        </a>
+        </div>
+        <div class="topics">
+            <ul>
+                <a href="#"><li id="cricket" onclick="onNavItemClick('cricket')">Cricket</li></a>
+                <a href="#"><li id="finance" onclick="onNavItemClick('finance')">Finance</li></a>
+                <a href="#"><li id="politics" onclick="onNavItemClick('politics')">Politics</li></a>
+                <a href="#"><li id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li></a>
+            </ul>
+        </div>
+        <div class="input">
+            <input type="text" name="text" id="text" placeholder="e.g Science">
+            <button id="btn">Search</button>
+        </div>
+    </nav>
+
+    <!--==========MAIN========-->
+    <main>
+        <div class="cards-container">
+        </div>
+    </main>
+
+    <template id="template-news">
+        <div class="container">
+            <div class="card">
+                <img src="backstage1.JPG" alt="Image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 id="news-source">End Gadget 20/03/2006</h6>
+                <p id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus harum, earum molestiae laudantium aspernatur voluptatibus!</p>
+            </div></div>
+    </template>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
