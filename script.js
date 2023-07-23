@@ -10,6 +10,7 @@ async function fetchNews(query){
     const res = await fetch(`${url}${query}&from=${time}&apiKey=${apiKey}`);
     const data = await res.json();
     const articles = data.articles;
+    console.log(articles);
     bindData(articles);
 }
 
