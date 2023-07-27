@@ -16,13 +16,13 @@ async function fetchNews(query){
 
 
 function bindData(articles) {
-    let aa = articles;
+    let articles = articles;
     const cardsContainer = document.querySelector('.cards-container');
     const newsTemplate = document.querySelector('#template-news');
 
     cardsContainer.innerHTML = "";
 
-    aa.forEach((article) => {
+    articles.forEach((article) => {
         if(!article.urlToImage) return;
         const cardClone = newsTemplate.content.cloneNode(true);
 
