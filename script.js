@@ -16,7 +16,6 @@ async function fetchNews(query){
 
 
 function bindData(articles) {
-    let articles = articles;
     const cardsContainer = document.querySelector('.cards-container');
     const newsTemplate = document.querySelector('#template-news');
 
