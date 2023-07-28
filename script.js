@@ -1,5 +1,5 @@
 const url = "https://newsapi.org/v2/everything?q=";
-const apiKey = "6866e04559ed4453a0dd131a7763989a";
+const apiKey = "PRIVATE";
 const time = "2023-07-21"
 
 
